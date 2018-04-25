@@ -1,0 +1,30 @@
+{
+  "name": {
+    "message": "Logique Easy Search",
+    "description": "The official extension name"
+  },
+  "desc": {
+    "message": "Pesquise nas plataformas da Logique!",
+    "description": "A brief description about the extension"
+  },
+  "browser_action_tooltip": {
+  	"message": "Logique Easy Search",
+  	"description": "A tooltip message over extension button"
+  },
+  "context_menu_title": {
+  	"message": "Logique Easy Search",
+	"description": "The extension title at context menu"
+  },
+  "popup_input_search_placeholder": {
+  	"message": "Pesquisar por . . .",
+  	"description": "The placeholder at input search popup extension"
+  },
+  "popup_header_name": {
+  	"message": "Logique Easy Search",
+  	"description": "The extension name at popup header"
+  },
+  "popup_button_text": {
+  	"message": "OK",
+  	"description": "The popup button text"
+  }
+}
