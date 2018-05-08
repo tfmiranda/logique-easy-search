@@ -2,60 +2,43 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		<style type="text/css">
 			body {
 				width: 350px;
 			}
-			/*
-			#divMain {
-				padding: 0;
-				font-family: Helvetica, Ubuntu, Arial, sans-serif;
-			}
-			h3 {
-				font-size: 1.2em;
-				padding: 0;
-				margin: 0;
-			}
-			
-			#inputSearch {
-				padding:7px;width:200px;border:3px solid #f5f5f5;
-				font-size:13px;color:gray;
-				background-image:url('http://i47.tinypic.com/r02vbq.png');
-				background-repeat:no-repeat;
-				background-position:100% 50%;
-			}
-			*/
-		</style>
 
-		<script src="../bg/background.js"></script>
-		<script src="popup.js"></script>
+			#divHeaderName {
+				display:flex;
+				justify-content:center;
+				align-items:center;						
+				font-size: 22px;	
+			}
+
+			#pHeaderName {
+				font-family: 'Maven Pro', sans-serif;
+			}
+
+			#divResults {
+				min-height: 200px;
+			}
+		</style>
 	</head>
 
 	<body>
-		<div id="divMain" class="m-2">
-			<!--div id="divHeader" style="line-height:1.6"-->
-			<div id="divHeader" class="row">		
+		<div id="divMain" class="m-2">			
+			<div id="divHeader" class="row m-2">		
 				<div id="divHeaderIcon" class="col-3">
 					<img id="imgHeader">
 				</div>	
-				<div id="divHeaderName" class="col-9">
-					<!--p id="pHeaderName" style="font-family:'Verdana';font-size:17px"></p-->
+				<div id="divHeaderName" class="col-9 align-middle">
 					<p id="pHeaderName"></p>
 				</div>	
 			</div>
 
-			<!--div id="divSearch" style="margin-bottom:8px">
-				<form id="formSearch">					
-					<input id="inputSearch" type="text" name="word" placeholder="" />
-				</form>
-			</div-->
-
-			<!--div id="divButton">
-				<button id="buttonSearch" type="button" style="width:100%;height:25px"></button>
-			</div-->
-
-			<form id="formSearch">	
+			<form id="formSearch" class="row m-1">	
 				<div class="input-group">					
 				  	<input type="text" id="inputSearch" class="form-control">			      
 				   	<span class="input-group-btn">
@@ -63,11 +46,21 @@
 				   	</span>			      	
 				</div>
 			</form>
+
+			<div id="divResults" class="row m-1 justify-content-center align-items-center">				
+				<p id="pDivResults"></p>				
+			</div>
 		</div>
 
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
  		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+		<script src="../bg/background.js"></script>
+		<script src="popup.js"></script>
+		<script src="header_handler.js"></script>
+		<script src="input_button_handler.js"></script>
+		<script src="results_handler.js"></script>
 	</body>
 </html>
  

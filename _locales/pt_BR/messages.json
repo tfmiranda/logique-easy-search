@@ -26,5 +26,13 @@
   "popup_button_text": {
   	"message": "OK",
   	"description": "The popup button text"
+  },
+  "popup_results_loading": {
+    "message": "Carregando ...",
+    "description": "The loading message"
+  },
+  "popup_results_nothing": {
+    "message": "Nada listado.",
+    "description": "Message for empty result"
   }
 }
